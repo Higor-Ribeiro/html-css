@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminue o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="img/img-p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="img/img-m.png" type="image/png">
+        <img src="img/img-g.png" alt="foto g">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a Reproduzir audios em HTML5.</p>
+    <audio src="midia/emotional-piano-background-music-372012.mp3" controls autoplay></audio>
+    <audio  preload="metadata" autoplay>
+        <source src="midia/emotional-piano-background-music-372012.mp3" type="audio/mpag">
+        <source src="midia/emotional-piano-background-music-372012.ogg" type="audio/ogg">
+        <source src="midia/emotional-piano-background-music-372012.wav" type="audio/wav">
+        <p>infelismente o seu navegador não consegue Reproduzir áudio. <a href="midia/emotional-piano-background-music-372012.mp3">clique a qui</a>para baixar o arquivo mp3.</p>
+    </audio>
+</body>
+</html>
