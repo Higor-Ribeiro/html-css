@@ -34,3 +34,38 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section#img01 {
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.Hd5TWefRWcrXq_AcAXWzaQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-position: center center;
+}
+section.imagem {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+section#img02{
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.SxHpb_gRNIE47ZLr0QfrWgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-position: center center;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
