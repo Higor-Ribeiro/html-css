@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: purple;
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        fieldset{
+            color: white;
+        }
+        #enviar,#limpar{
+            background-color: purple;
+            color: white;
+            width: 90px;
+            padding: 5px;
+            margin: 5px;
+        }
+        fieldset input{
+            border: 0;
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail"required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">número de Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+            </p>
+        </fieldset>
+        <p class="botoes">
+            <input type="submit" id="enviar" value="Enviar">
+            <input type="reset" id="limpar" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
