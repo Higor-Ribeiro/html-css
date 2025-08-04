@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        #icpf{
+            height: 30px;
+            width: 300px;
+            border:2px solid white;
+            border-radius: 24px;
+            background-color: rgb(235, 235, 235);
+            padding: 15px;
+        }
+        h1{
+            color: blueviolet;
+        }
+        #icpf:hover{
+            border: 2px solid rgba(121, 0, 121, 0.39);
+            transition: border 0.5s, background-color 0.5s;
+        }
+        #continuar{
+            width: 330px;
+            height: 60px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            padding: 15px;
+            text-align: left;
+        }
+        #continuar:hover{
+            background-color: rgb(55, 18, 90);
+        }
+    </style>
+</head>
+<body>
+    <h1>NU</h1>
+    <p>
+        Peça seu Cartão de Crédito e sua Conta do Nubank
+    </p>
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="icpf"></label>
+            <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF">
+        </p>
+        <p>
+            <input type="submit" id="continuar" value="Continuar">
+        </p>
+    </form>
+</body>
+</html>
