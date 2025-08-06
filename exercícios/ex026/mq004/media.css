@@ -1,2 +1,17 @@
 @charset "UTF-8";
 
+@media print{/*IMPRESSÃO*/
+
+}
+@media screen and (min-width: 770px) and (max-width:1000px){/*TABLET*/ 
+    body{
+        background-image: url(imagens/back-tablet.jpg);
+    }
+    
+}
+@media screen and (min-width: 1000px) and (max-width:1200px){/*DESKTOP*/
+    
+}
+@media screen and (min-width: 1200px){/*TELAS GRANDES*/
+    
+}
