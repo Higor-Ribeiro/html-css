@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media-Completo</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/medias.css">
+    <title>Media-Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <header>
-        <h1>Meu Site</h1>
-        <menu>
-            <a href="#">opção 1</a>
-            <a href="#">opção 2</a>
-            <a href="#">opção 3</a>
-            <a href="#">opção 4</a>
-            <a href="#">opção 5</a>
-        </menu>
-    </header>
-    <main>
-        <h2>Testando Media Queries</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet aspernatur enim nam odio accusamus optio! Magnam facere sapiente quam et dolore autem. Ipsa odit ut possimus asperiores numquam nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sapiente, explicabo, corporis aspernatur nesciunt fugiat nobis itaque placeat corrupti velit porro cupiditate dolor eligendi? Earum natus tenetur optio consequuntur ipsam?</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos eligendi ut, unde quae natus laboriosam velit molestiae delectus porro aut quia corrupti repellat. Iusto, voluptates? Minima dolorem aperiam ameta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur cumque, quis quasi quae neque, modi dolorem illo, repudiandae alias dolor labore atque aut tempore quod saepe! Illo quos totam alias?</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi animi cum labore at a beatae hic accusantium exercitationem ipsum facilis, praesentium aliquam inventore nisi nemo soluta dolores officiis maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illum consectetur iusto nesciunt exercitationem laboriosam debitis excepturi et officiis. Modi distinctio vero sapiente maxime accusamus quae saepe ipsum nisi provident?</p>
-    </main>
+   <header>
+    <svg id="burguer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" onclick="clickMenu()">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <h1>Meu site</h1>
+    <menu>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </menu>
+   </header>
+   <main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut debitis accusantium quae ab deleniti totam ad doloribus perferendis qui, quaerat maxime temporibus! Possimus quis totam amet qui voluptate explicabo dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis iusto laboriosam, ratione ex repellat! Atque velit sint ad soluta esse ex, repellat illo sapiente magnam minus illum ab temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam fugit et tempora. Hic facilis tenetur ut earum nobis? Porro, neque corrupti? Nam totam quis cum debitis provident ratione aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus recusandae distinctio illo magni omnis non dolorem necessitatibus incidunt maiores quod quo nobis fuga tempora saepe unde autem, deserunt temporibus alias?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ducimus excepturi sequi porro officiis vel quas. Distinctio ratione accusamus cum at officia dicta error placeat beatae sequi obcaecati. Repellat, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat culpa ea assumenda nulla pariatur, aliquam, eligendi modi omnis, repellat labore dicta nemo optio dolore at cupiditate placeat vel sit reiciendis.</p>
+        </article>
+   </main>
+   <script>
+          function clickMenu() {
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+   </script>
 </body>
 </html>
