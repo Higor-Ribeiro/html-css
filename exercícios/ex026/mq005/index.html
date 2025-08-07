@@ -4,40 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media-Queries</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/medias.css">
 </head>
 <body>
    <header>
+    <h1>Meu site</h1>
     <svg id="burguer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" onclick="clickMenu()">
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
-
-    <h1>Meu site</h1>
-    <menu>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <menu id="itens">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
     </menu>
    </header>
    <main>
         <article>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut debitis accusantium quae ab deleniti totam ad doloribus perferendis qui, quaerat maxime temporibus! Possimus quis totam amet qui voluptate explicabo dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis iusto laboriosam, ratione ex repellat! Atque velit sint ad soluta esse ex, repellat illo sapiente magnam minus illum ab temporibus.</p>
+            <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam fugit et tempora. Hic facilis tenetur ut earum nobis? Porro, neque corrupti? Nam totam quis cum debitis provident ratione aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus recusandae distinctio illo magni omnis non dolorem necessitatibus incidunt maiores quod quo nobis fuga tempora saepe unde autem, deserunt temporibus alias?</p>
+            <br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ducimus excepturi sequi porro officiis vel quas. Distinctio ratione accusamus cum at officia dicta error placeat beatae sequi obcaecati. Repellat, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat culpa ea assumenda nulla pariatur, aliquam, eligendi modi omnis, repellat labore dicta nemo optio dolore at cupiditate placeat vel sit reiciendis.</p>
         </article>
    </main>
    <script>
-          function clickMenu() {
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
-   </script>
+    function clickMenu() {
+        const menu = document.getElementById('itens');
+        menu.classList.toggle('mostrar');
+    }
+    </script>
 </body>
 </html>

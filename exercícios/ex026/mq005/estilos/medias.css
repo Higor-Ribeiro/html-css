@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 770px) {
+    #burguer {
+        display: none;
+    }
+
+    #itens {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+
+    header a {
+        display: inline-block;
+        width: auto;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #burguer {
+        display: none;
+    }
+
+    #itens {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+
+    header a {
+        display: inline-block;
+        width: auto;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-bottom: 0;
+    }
+}

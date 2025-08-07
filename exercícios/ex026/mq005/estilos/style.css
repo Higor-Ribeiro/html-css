@@ -1,20 +1,74 @@
 @charset "UTF-8";
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
-header{
+
+header {
     background-color: gray;
+    width: 100%;
+    padding: 10px 0;
+    overflow-x: hidden;
 }
-header h1{
+
+header h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
-#burguer{
-    width: 100vw;
+
+#burguer {
+    background-color: rgb(78, 78, 78);
+    display: block;
+    width: 100%;
     height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+#burguer:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#itens {
+    display: none;
+    margin-bottom: 10px;
+}
+
+#itens.mostrar {
+    display: block;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+    padding: 5px;
+    background-color: rgb(77, 77, 77);
+}
+
+header a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
 }
