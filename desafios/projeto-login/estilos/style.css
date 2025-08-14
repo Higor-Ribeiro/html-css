@@ -54,7 +54,7 @@ section .input {
     font-size: 1em;
     padding-left: 4px;
     border-radius: 8px;
-    width: 75%;
+    width: 80%;
     height: 35px;
     display: inline-block;
 }
@@ -66,7 +66,7 @@ section #entrar{
     color: white;
     font-size: 15px;
     padding: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -77,6 +77,7 @@ section #entrar:hover{
 }
 section a{
     text-decoration: none;
+    text-align: center;
     background-color: white;
     color: rgb(0, 179, 179);
     font-size: 15px;
