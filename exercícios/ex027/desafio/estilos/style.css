@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width:765px) and (max-width:1024px){
+    header{
+        flex-flow: row wrap;
+    }
+    header nav{
+        flex-flow: row wrap-reverse;
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width:1024px) {
+    header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        gap: 7px;
+        width: auto;
+    }
+}
