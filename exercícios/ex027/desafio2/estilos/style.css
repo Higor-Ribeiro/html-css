@@ -22,19 +22,24 @@ section {
   flex-direction: column;
 }
 
+/* --- pt1 --- */
 #pt1 {
   display: flex;
   flex-flow: row wrap-reverse;
 }
+
 #pt1 article {
   flex: 1 1 300px;
   text-align: justify;
   margin: 10px;
 }
+
 #pt1 div {
-  flex: 1 1 500px;
-  height: 300px;
+  flex: 1 1 0;
+  width: 100%;
+  max-width: 100%;
 }
+
 #pt1 #img {
   width: 100%;
   max-width: 300px;
@@ -46,25 +51,34 @@ section {
   align-items: center;
 }
 
-
 #pt2 {
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
 }
+
 #pt2 article {
   flex: 1 1 300px;
   text-align: justify;
   margin: 10px;
 }
+
 #pt2 div {
-  flex: 1 1 500px;
-  height: 300px;
+  flex: 1 1 0;
+  width: 100%;
+  max-width: 100%;
 }
+
 #pt2 iframe {
   width: 100%;
   max-width: 500px;
   aspect-ratio: 16 / 9;
   border: 2px solid black;
   background: blanchedalmond;
+}
+
+@media screen and (max-width: 1200px) {
+  #pt1,
+  #pt2 {
+    flex-direction: column;
+  }
 }
